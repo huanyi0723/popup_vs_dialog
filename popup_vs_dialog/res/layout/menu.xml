@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout 
+        android:id="@+id/menu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        
+	    <TextView
+	        android:id="@+id/menu_camera"
+	        android:layout_width="100dp"
+	        android:layout_height="50dp"
+	        android:gravity="center"
+	        android:clickable="true"
+	        android:text="相机拍照"
+	        android:textSize="16sp"
+	        android:textColor="@android:color/black"
+	        android:background="@android:color/white"/>
+	    
+	    <View
+	        android:id="@+id/menu_sep"
+	        android:layout_width="100dp"
+	        android:layout_height="1dp"
+	        android:background="@android:color/black"
+	        android:layout_below="@id/menu_camera"/>
+	    
+	    <TextView
+	        android:id="@+id/menu_album"
+	        android:layout_width="100dp"
+	        android:layout_height="50dp"
+	        android:layout_below="@id/menu_sep"
+	        android:gravity="center"
+	        android:clickable="true"
+	        android:text="选取图片"
+	        android:textSize="16sp"
+	        android:textColor="@android:color/black"
+	        android:background="@android:color/white"/>
+	</RelativeLayout>
+	
+    <ImageView 
+            android:id="@+id/arrow_up"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@id/menu_layout"
+        	android:layout_marginTop="0dp"
+        	android:layout_centerHorizontal="true"
+        	android:src="@drawable/arrow_up"/>
+    
+</RelativeLayout>
